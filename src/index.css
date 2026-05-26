@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+html, body {
+  background-color: #080b14;
+  color: #cbd5e1; /* text-slate-300 */
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+
+/* Glassmorphism custom components */
+.frosted-panel {
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px) saturate(130%);
+  -webkit-backdrop-filter: blur(20px) saturate(130%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.frosted-panel-dense {
+  background-color: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(24px) saturate(120%);
+  -webkit-backdrop-filter: blur(24px) saturate(120%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.frosted-panel-premium {
+  background-color: rgba(79, 70, 229, 0.15); /* indigo-600 with 15% opac */
+  backdrop-filter: blur(24px) saturate(130%);
+  -webkit-backdrop-filter: blur(24px) saturate(130%);
+  border: 1px solid rgba(129, 140, 248, 0.3);
+}
+
+.frosted-panel-success {
+  background-color: rgba(16, 185, 129, 0.06); /* emerald-500 with 6% opac */
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.frosted-panel-danger {
+  background-color: rgba(239, 68, 68, 0.1);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+}
+
+.frosted-panel-warning {
+  background-color: rgba(245, 158, 11, 0.08);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+/* Intelligent frosted input element styles */
+.input-glass {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #f8fafc; /* text-slate-50 */
+  transition: all 0.2s ease-in-out;
+}
+.input-glass:focus {
+  background-color: rgba(255, 255, 255, 0.09);
+  outline: none;
+  border-color: rgba(129, 140, 248, 0.5); /* indigo-400 */
+}
+
+/* Custom scrollbars inside dark scroll menus */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Бухгалтерия и Контроль Бюджета",
+  "description": "Умная бухгалтерия с автоматическим распознаванием чеков через ИИ, лимитами трат, детальной аналитикой и поиском дешевых товаров по геолокации.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
