@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/react-refresh' // или то, что у тебя используется
+import react from '@vitejs/plugin-react'
 
+// https://vitejs.dev/config/
 export default defineConfig({
-  base: '/paybillls/', // <-- ОБЯЗАТЕЛЬНО ДОБАВЬ ЭТУ СТРОКУ (с косыми чертами по бокам)
+  base: '/paybillls/',
   plugins: [react()],
 })
